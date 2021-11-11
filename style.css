@@ -1,0 +1,303 @@
+/* 共通 */
+body {
+  /* font-family: "Yu Gothic Medium","游ゴシック Medium,YuGothic",YuGothic,"游ゴシック体","ヒラギノ角ゴ Pro W3",sans-serif; */
+  font-family:'Economica'; 
+  line-height: 1.7;
+  /* color: #432; */
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+}
+
+
+/*HEADER*/
+a {
+  text-decoration: none;
+  color: #000;
+}
+.nav {
+  /* position: fixed; */
+  font-family:'Economica'; 
+  font-size:108%; 
+  letter-spacing:0.1em;
+}
+.nav li {
+  list-style: none;
+  margin-bottom: 20px;
+}
+.nav a {
+  color: #000;
+}
+.nav a:hover {
+  /* color: rgb(138, 138, 138); */
+  opacity: .5;
+}
+#gnav {
+  position:fixed; 
+  bottom:31px; 
+  left:26px;
+}
+
+/* header */
+#header img:hover {
+  opacity: .5;
+}
+
+
+.wrapper {
+  margin: 0 auto;
+  padding: 0 4%;
+}
+.wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 4%;
+}
+
+.big-bg {
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+#home {
+  background-image: url(../img/home.jpg);
+  min-height: 110vh;
+}
+.home-content.home-title {
+  margin-top: 100px;
+}
+
+.swiper {
+  width: 450px;
+  height: 700px;
+}
+
+/* スライド */
+main {
+  width: 900px;
+  margin: 0 auto;
+}
+
+img {
+  vertical-align: bottom;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#main {
+  width: 900px;
+  height: 600px;
+  margin-bottom: 8px;
+}
+
+nav {
+  margin-bottom: 8px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+nav li {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 12px;
+  padding: 4px;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+}
+
+nav li:hover {
+  background: #f8f8f8;
+}
+
+#play {
+  width: 430px;
+}
+
+#prev,
+#next {
+  width: 200px;
+}
+
+.thumbnails {
+  display: grid;
+  grid-template-columns: repeat(5, 56px);
+  gap: 5px;
+}
+
+.thumbnails li {
+  cursor: pointer;
+  opacity: 0.4;
+}
+
+.thumbnails li:hover,
+.thumbnails li.current {
+  opacity: 1;
+}
+
+.thumbnails img {
+  width: 56px;
+}
+@media (max-width: 600px) {
+  main {
+    width: 330px;
+    margin: 0 auto;
+  }
+  
+  img {
+    vertical-align: bottom;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  #main {
+    width: 330px;
+    height: 230px;
+    margin-bottom: 8px;
+  }
+  
+  nav {
+    margin-bottom: 8px;
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  nav li {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 12px;
+    padding: 4px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  nav li:hover {
+    background: #f8f8f8;
+  }
+  
+  #play {
+    width: 165px;
+  }
+  
+  #prev,
+  #next {
+    width: 65px;
+  }
+  
+  .thumbnails {
+    display: grid;
+    grid-template-columns: repeat(5, 56px);
+    gap: 5px;
+  }
+  
+  .thumbnails li {
+    cursor: pointer;
+    opacity: 0.4;
+  }
+  
+  .thumbnails li:hover,
+  .thumbnails li.current {
+    opacity: 1;
+  }
+  
+  .thumbnails img {
+    width: 56px;
+  }
+}
+
+/* 食べ物グリッド */
+/* .food{
+  width: 253px;
+  height: 210px;
+} */
+.grid {
+  display: grid;
+  gap: 26px;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  margin-top: 6%;
+  margin-bottom: 50px;
+}
+.big-box {
+  grid-column: 1 / 3;
+  grid-row: 1 / 3;
+}
+.big-box img {
+  height: 99%;
+  width: 100%;
+  object-fit: cover;
+}
+@media (max-width: 600px) {
+  .grid {
+    display: grid;
+    gap: 26px;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    margin-top: 6%;
+    margin-bottom: 50px;
+  }
+  .big-box {
+    grid-column: auto;
+    grid-row: auto;
+  }
+  .item {
+    height: 100%;
+    width: 100%;
+    /* object-fit: cover; */
+
+  }
+}
+
+.hovercontents {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  margin-top: 6%;
+  margin-bottom: 5%;
+}
+.title {
+  opacity: 1;
+}
+
+/* スクロール */
+ 
+.up{
+  width: 600px;
+  height: 200px;
+  margin-left: auto;
+  margin-right:auto;
+  box-sizing: border-box;
+  background-position: center;
+}
+
+
+.up{
+    opacity: 0;
+    transition: all 1s ease;
+  }
+   
+ .up.show {
+    opacity: 1;
+    transform: none;
+  }
+   
+.op{
+    transform: translate(0, 100px);
+  }
+
